@@ -1,0 +1,127 @@
+*{
+	box-sizing: border-box;
+	font-family: arial;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.site_header{
+	background-color: #c583e4;
+	padding: 5px 0;
+	position: fixed;
+	left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+}
+.navigation ul{
+	/*display: flex;
+    justify-content: right;
+    align-items: center;*/
+    list-style: none;
+    padding: 0;
+	margin: 0;
+}
+.navigation ul li{
+	margin-left: 20px;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.10);
+}
+.navigation ul li a{
+	color: #fff;
+	display: block;
+	padding: 20px 0;
+}
+.home{
+	background-color: #e44b5a;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.home h1{
+	margin: 0;
+}
+.about{
+	background-color: #b0e44b;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;	
+}
+.about h2{
+	margin: 0;
+}
+.services{
+	background-color: #8f8af8;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.services h2{
+	margin: 0;
+}
+.contact_Us{
+	background-color: #69c8ef;
+	height: 100vh;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contact_Us h2{
+	margin: 0;
+}
+#sidebarmenu{
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 250px;
+	margin-top: 60px;
+	background: #2e86de;
+	transform: translateX(-250px);
+	transition: transform 250ms ease-in-out
+}
+.sidebarIconToggle{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	z-index: 20;
+	top: 22px;
+	left: 15px;
+	cursor: pointer;
+}
+#opensidebarmenu:checked ~ #sidebarmenu{
+	transform: translateX(0px);
+}
+.spinner{
+	background: #fff;
+	height: 3px;
+	transition: all 0.3s;
+}
+.spinner.middle,
+.spinner.bottom{
+	margin-top: 3px;
+}
+#opensidebarmenu:checked ~ .sidebarIconToggle > .spinner.middle{
+	opacity: 0;
+}
+#opensidebarmenu:checked ~ .sidebarIconToggle > .spinner.top{
+	transform: rotate(135deg);
+	margin-top: 8px;
+}
+#opensidebarmenu:checked ~ .sidebarIconToggle > .spinner.bottom{
+	transform: rotate(-135deg);
+	margin-top: -9px;
+}
+input#opensidebarmenu{
+	display: none;
+}
