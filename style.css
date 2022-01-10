@@ -43,8 +43,8 @@ a{
 	background-color: #e44b5a;
 	height: 100vh;
 	justify-content: center;
-    align-items: center;
-    display: flex;
+   	 align-items: center;
+    	display: flex;
 }
 .home h1{
 	margin: 0;
@@ -53,8 +53,8 @@ a{
 	background-color: #b0e44b;
 	height: 100vh;
 	justify-content: center;
-    align-items: center;
-    display: flex;	
+   	 align-items: center;
+   	 display: flex;	
 }
 .about h2{
 	margin: 0;
@@ -63,8 +63,8 @@ a{
 	background-color: #8f8af8;
 	height: 100vh;
 	justify-content: center;
-    align-items: center;
-    display: flex;
+    	align-items: center;
+    	display: flex;
 }
 .services h2{
 	margin: 0;
@@ -73,8 +73,8 @@ a{
 	background-color: #69c8ef;
 	height: 100vh;
 	justify-content: center;
-    align-items: center;
-    display: flex;
+    	align-items: center;
+   	display: flex;
 }
 .contact_Us h2{
 	margin: 0;
